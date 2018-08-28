@@ -1,0 +1,6 @@
+{
+  "ACCOUNT_GMAIL_USERNAME": "bioclimaticbighouse@gmail.com",
+  "ACCOUNT_GMAIL_PASSWORD": "0bigh@use",
+  "GMAIL_EMAIL_RECIPIENTS": [ "jesusbarcam@gmail.com" ],
+  "EMAIL_TEMPLATE_SUBJECT":"Web customer question"
+}
