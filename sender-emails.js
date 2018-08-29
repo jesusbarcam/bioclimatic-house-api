@@ -90,8 +90,7 @@ module.exports = {
         var emailTemplate = createEmailTemplate(email, message);
         createEmailAndShipping( emailTemplate, email, settings )
         .subscribe(function(response) {
-          console.log("SEND EMAIL WITH THESE PARAMETERS: ", email, ' ---- ', message);
-          console.log("HEMOS ENVIADO ESTO O NO!!!!!");
+          // When shipping process to finish!
           observer.next( response );
           subscription.unsubscribe();
         });
