@@ -17,16 +17,21 @@
 
 
   "ERRORS":{
-    "E404":"Currently our system is out of coverage ...Try it later. We apologize for the inconveniences"
+    "E404":"Currently our system is out of coverage ...Try it later. We apologize for the inconveniences",
+    "REQUIRED_FIELD":"This field is required",
+    "EMAIL_FORMAT_VALIDATION":"The mail format is wrong"
   },
 
 
   "COMMON_APPLICATION":{
     "NAME_COMPANY":"Bioclimatic Big House",
     "FULL_NAME_COMPANY":"Bioclimatic Big House S.L.",
-    "ADDRESS_COMPANY":"Quintanar de la Orden",
-    "TOWN_COMPANY":"Toledo (España)",
+    "ADDRESS_COMPANY":"Avenida Castilla la Mancha",
+    "ADDRESS_NUMBER_COMPANY":"87 2ºA",
+    "TOWN_COMPANY":"Illescas (Toledo)",
+    "POSTAL_CODE_COMPANY":"45200",
     "PHONES_COMPANY":"654 746 654",
+    "EMAIL_COMPANY":"greenbighouse@gmail.com",
     "TITLE":"Official Web App of Bioclimatic Big House Company",
     "SLOGAN_HOME":"We Builded yours dreams, securing the future",
     "SLOGAN_ABOUT_US":"Use of renewable energy through sustainable systems",
@@ -141,6 +146,8 @@
     "EMAIL_PLACEHOLDER":"Add your email",
     "MESSAGE_PLACEHOLDER":"Add your message ...",
     "SUBMIT_BUTTON":"Send",
-    "RESET_BUTTON":"Reset"
+    "RESET_BUTTON":"Reset",
+    "SHIPPING_PROCCESS":"Sending",
+    "DISPATCHED_MAIL":"The email has been sent, you will receive a response in a short time"
   }
 }

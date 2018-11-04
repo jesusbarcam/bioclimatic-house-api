@@ -39,10 +39,11 @@ apiRest.get('/',function(req,res) {
 apiRest.post('/contact/message',function(req, res) {
   var email = req.body.email;
   var message = req.body.message;
-  var subscription = senderEmails.sendEmail(email, message).subscribe(function(sentEmail) {
-    console.log("SEND EMAIL IS!!! " , sentEmail);
-    var responseCode = ( sentEmail )? 200:500;
-    res.sendStatus( responseCode );
+  var subscription = senderEmails.sendEmail(email, message)
+  .subscribe(function(sentEmail) {
+    console.warn( sentEmail );
+    var responseCode = ( sentEmail.indexOf('OK') > -1 )? 200:500;
+    res.send({status: responseCode, statusText: sentEmail });
     subscription.unsubscribe();
   });
 });
