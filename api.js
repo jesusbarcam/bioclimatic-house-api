@@ -43,7 +43,7 @@ apiRest.post('/contact/message',function(req, res) {
   .subscribe(function(sentEmail) {
     console.warn( sentEmail );
     var responseCode = ( sentEmail.indexOf('OK') > -1 )? 200:500;
-    res.sendStatus( responseCode );
+    res.send({status: responseCode, statusText: sentEmail });
     subscription.unsubscribe();
   });
 });
